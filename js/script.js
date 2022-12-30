@@ -1,10 +1,11 @@
 var button=document.getElementById("autoscrollon");
 var button2=document.getElementById("autoscrolloff");
+var win=document.getElementById("homepage_content")
 
 function pageScroll(){
         clearTimeout(scroll);
-        window.scrollBy(0,1);
-        scroll=setTimeout(pageScroll,10);
+        win.scrollBy(0,1);
+        scroll=setTimeout(pageScroll,40);
 }
 
 function stopScroll(){
