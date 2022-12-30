@@ -1,0 +1,165 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    grid-template-rows: 1fr 8.8fr 0.2fr;
+}
+
+header{
+    box-sizing: border-box;
+    padding-right: 3%;
+    padding-bottom: 3%;
+    position: absolute;
+    height: 80%;
+    width: 35%;
+    left: 5%;
+    overflow: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    line-height: 10vh;
+}
+
+h2{
+    line-height: 10vh;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+h3{
+    line-height: 6vh;
+    font-size: larger;
+}
+
+h4,#header_link{
+    line-height: 4vh;
+    text-decoration: none;
+}
+
+#header_link{
+    color: blue;
+}
+
+#header_link:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+a{
+    color: rgb(0, 7, 105);
+}
+
+a:hover{
+    color: purple;
+    text-decoration: underline;
+}
+
+#img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 25vh;
+    max-width: 25vw;
+    border-radius: 50%;
+}
+
+header p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+    line-height: 2.5vh;
+    padding-top: 1vh;
+    overflow: auto;
+}
+
+#buttons{
+    right: 2vw;
+    position: fixed;
+}
+
+#buttons button{
+    padding: .2vw;
+    max-width: 15vw;
+}
+
+#homepage_content{
+    grid-row: 1/span 2;
+    grid-column: 2/span 1;
+    margin-left: 2vw;
+    overflow: auto;
+}
+
+section p{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vh;
+    padding-right: 5vw;
+    max-width: 80%;
+    line-height: 2.5vh;
+}
+
+section p img{
+    max-width: 100%;
+}
+
+figure{
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.group{
+    max-width: 40%;
+}
+
+span{
+    font-style: italic;
+}
+
+strong{
+    font-weight: 600;
+}
+
+aside{
+    overflow: auto;
+    box-sizing: border-box;
+    padding-right: 3%;
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    height: 15%;
+    width: 35%;
+}
+
+label{
+    display: block;
+    padding-top: 2vh;
+    text-align: center;
+}
+
+#send_button{
+    display: block;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    margin-top: 3vh;
+    grid-row: 3/span 1;
+    grid-column: 1/span 2;
+    padding: 1vh;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}

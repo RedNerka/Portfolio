@@ -12,65 +12,217 @@
         </script>
         <meta charset="UTF-8">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <!-- <link rel="icon" href="images/favicon_twom.ico"> -->
+        <link rel="icon" href="images/favicon.ico">
         <link rel="stylesheet" href="css/html5reset.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+
         <script src="https://kit.fontawesome.com/90f9532ca5.js" crossorigin="anonymous"></script>
         <title>Personal Portfolio Site</title>
     </head>
     <body>
-        <header>
-            <h1>portfolio</h1>
-            <a href="#homepage_content" id="skip">
-                <span>Skip to content  </span><i class="fa-sharp fa-solid fa-up-right-from-square"></i>
-            </a>
-            <nav id="nav_bar">
-                <ul>
-                    <li><a href="index.html" class='active-page'>Homepage</a></li>
-                </ul>
-            </nav>
-            <a href="#nav_bar" id="back_to_nav">
-                <span>Back to Navigation</span>
-                <i class="fa-sharp fa-solid fa-list"></i>
-            </a>
+        <header tabindex="0">
+            <h1>Shiyu Wu</h1>
+            <figure>
+                <img src="images/pic.png" alt="A picture of myself" id="img"/>
+            </figure>
+            <p>
+                In pursuit of a bachelor of engineering degree in Shanghai Jiao Tong University (SJTU) with a major in software engineering. Expected graduation in 2023.
+            </p>
+            <p>
+                In pursuit of a master of science degree in University of Michigan (UM) with a major in data analytics. Expected graduation in 2024.
+            </p>
+            <p>
+                Have a coding experience of four years and love messing with Python (not mentioning other languages doesn't mean I don't like them).
+            </p>
+            <p>
+                Love making various kinds of music with Fruity Loops Studio. Love cycling on road bike and see different things around me. Love travelling and make contact with 
+                new environment.
+            </p>
+            <p>
+                Personal motto: <strong>Having a style is like being in jail.</strong>
+            </p>
         </header>
         <main id="homepage_content">
             <div id="buttons">
                 <button id="autoscrollon">Auto Scroll</button>
                 <button id="autoscrolloff">Stop Auto Scroll</button>
             </div>
-            <section tabindex="0">
-                
+            <h2>Skills and Experience</h2>
+            <section>
+                <h3>⭐ Software Engineering</h3>
+                <a href="https://github.com/RedNerka/si507-final-project" id="header_link">👉 Database Construction based on KD-tree</a>
+                <p>
+                    This Python project is an independent project initiated by a UMSI course: Intermediate Programming (SI507). The development time is about 
+                    one month from Nov. 2022 to Dec. 2022. There are basically three parts in the project: web scrapping, data retrieving using Twitter API v2, 
+                    and data structure constructing. <a href="https://github.com/RedNerka/si507-final-project/blob/main/README.md">
+                        Detailed project description can be found here. </a>
+                </p>
+                <p>
+                    <a href="https://drive.google.com/file/d/1DQ0HOiH4L-L1TG5cLYri8uxDn6uNl9oJ/view?usp=sharing">Here also is a demo video for this project.</a> 
+                    The video is about 7 minutes long. Feel free to check it out.
+                </p>
+                <p>
+                    <span>1. </span>For web scrapping, Python built-in method <span>requests.get()</span> is used multiple times to get the html source codes from multiple 
+                    Wikipedia pages. Cache files are used to avoid long runtimes in repeated code executions. Python library <span>BeautifulSoup</span> is used to capture 
+                    desired data in the html source codes. 
+                </p>
+                <p>
+                    <span>2. </span>For data retrieving using Twitter API v2, two types of data are retrieved with Twitter API v2: user information and user following information. 
+                    Based on <a href="https://github.com/twitterdev/Twitter-API-v2-sample-code">the sample codes</a> provided by Twitter, modifications are made in the codes to 
+                    fulfill the purpose of the project. Up to this point, 1106 records of data in total are gathered for future data structure construction.
+                </p>
+                <p>
+                    <span>3. </span>For data structure constructing, KD-tree is used to organize and store data. Several class methods including: node search, node insertion, 
+                    range search, etc. are implemented.
+                </p>
+                <h4>👉 Data Structure Projects Using C++</h4>
+                <p>
+                    The projects are a set of independent projects initiated by a UM-SJTU Joint Institute course: Data Structures and Algorithms (VE281 or ECE2810J). The 
+                    development time is about 3 months from May. 2022 to July. 2022. Five projects are included in the project set: sorting, hash table, KD-tree, and P2P 
+                    shortest path.
+                </p>
+                <p>
+                    <span>1. </span>In the sorting project, six kinds of sorting algorithms are implemented with C++: bubble sort, insertion sort, selection sort, merge sort, 
+                    non-in-place quick sort, and in-place quick sort. Below is a screenshot of code tests. The tests are given to all six sorting functions and the time/memory costs 
+                    are recorded.
+                    <img src="images/sort.jpg" alt="A screenshot of sorting code tests"/>
+                </p>
+                <p>
+                    <span>2. </span>In the hash table project, an STL-like hash table data structure is implemented with <span>std::unordered_map</span>. The table size is dynamic 
+                    and only takes prime numbers. Whenever the hash table is full, the table sized is enlarged and the data are rehashed. The hash function takes the scheme of "hashing 
+                    by modulo". Here is a screenshot of code tests along with the time/memory costs.
+                    <img src="images/hash.jpg" alt="A screenshot of hashing code tests"/>
+                </p>
+                <p>
+                    <span>3. </span>In the KD-tree project, a self-balanced KD-tree is implemented with C++ class. Several functions are implemented: node search, node insertion, 
+                    node deletion, range search, balance tree, tree copy, tree deletion. Here is a screenshot of code tests along with the time/memory costs.
+                    <img src="images/tree.jpg" alt="A screenshot of KD-tree code tests"/>
+                </p>
+                <p>
+                    <span>4. </span>In the P2P shortest path project, Dijkstra's Algorithm is modified to find the shortest path between two points in a 2D graph. The edge weight 
+                    can be any integers, including negative integers, which is the reason of modifying the algorithm. Here is a screenshot of code tests along with the time/memory costs.
+                    <img src="images/path.jpg" alt="A screenshot of P2P shortest path code tests"/>
+                </p>
+                <p>
+                    <span>5. </span>In the final project, the previous four project codes are integrated into a single android application. The application uses quick sort algorithm to 
+                    sort the data. It uses the hash table data structure in the search function. It also uses the 2D-tree range search to search the neighbors given the coordinates and the 
+                    range. Last but not least, it uses P2P shortest path algorithm to find the shortest path between two points. <a href="https://drive.google.com/file/d/1BiVGKoEs-rM8n5XIHFJBVlK2irohV2vz/view?usp=sharing">A quick demo</a> 
+                    can be found here. Below is a screenshot showing the range search function.
+                    <img src="images/android.jpg" alt="A screenshot of Android application"/>
+                </p>
+                <h4>👉 Algorithm Intern at Xue Lang Yun Tech. Co. Ltd</h4>
+                <p>
+                    From Jan. 2022 to Apr. 2022, I work as an algorithm intern at Xue Lang Yun Tech. Co. Ltd. During the time, I developed and deployed a machine-learning 
+                    algorithm platform for industrial data prediction and optimization as a back-end developer, using scikit-learn library and Python. The product 
+                    was then used by a big automotive company in China: Greeley. Also, I was assigned to a client from a national firm: China Railway Engineering Corporation 
+                    as a technical supportor. Basically, my job was to regularly check in with the client, record the problem from the client and solve them. 
+                </p>
             </section>
-            <section tabindex="0">
-                
+            <section>
+                <h3>⭐ Data Analytics</h3>
+                <h4>👉 Business Status of American Airlines During Pandemic</h4>
+                <p>
+                    This project is an independent project initiated by a UMSI course: Data Manipulation and Analysis (SI618). The time period of the project is around 1 month 
+                    from Nov. 2022 to Dec. 2022. In the project, I used three datasets downloaded from <a href="https://www.kaggle.com/datasets">Kaggle</a> fro analysis: COVID-19 
+                    spread data, American Airlines (AA) stock price and deal volume data from 2005 to 2022, US domestic flight delay data. The goal of this project is to answer 
+                    three questions: Is there any seasonal effect in any of the datasets? Is there any significant impact from the pandemic on the business status of AA? A flight 
+                    delay event can be due to joint causes, what are some patterns of the delay cause when a delay happens?
+                </p>
+                <p>
+                    In the project, multiple languages and libraries are used, including: Python, SQL, Pandas, Scipy, Scikit-learn, Spark, Seaborn, Matplotlib, and Plotnine. 
+                    A full report can be viewed from <a href="https://drive.google.com/file/d/1VkwgeXcBkl6x5yZ5TDLl4Tq3d_oESqru/view?usp=sharing">HERE</a>.
+                </p>
+                <p>
+                    Following are some important visualizations and results obtained from the analyses. In the first image, it shows the cross correlation between Covid cases and 
+                    AA's stock close price in the first six months, 2020. In the second image, it shows the clusters of delay causes in two dimension visualization using K-means clustering (k=3).
+                    <figure>
+                        <img src="images/stock.png" alt="A screenshot showing a heat map of cross correlation between Covid cases and AA stock close prices" class="group"/>
+                        <img src="images/cluster.png" alt="A screenshot showing a cluster visualization of AA flight delay causes" class="group"/>
+                    </figure>
+                </p>
             </section>
-
-            <section tabindex="0">
-                
+            <section>
+                <h3>⭐ Extended Reality</h3>
+                <h4>👉 AR Shooting</h4>
+                <p>
+                    The project is initiated by me and supervised by SJTU Smart Display Lab. The project lasts one year from May. 2021 to Apr. 2022. "AR Shooting" is a multi-player shooting 
+                    simulation application run on Android platform. There are two versions for the app: VR and MR. The VR version is developed with Unity, C#, and Google Cupboard SDK, while the MR version is 
+                    developed with Unity, C#, and Google AR Foundation. Both versions support LAN party multi-player game. But for the MR version, the device installed with the app can be 
+                    mounted on a model gun so that the user can actually shoot a gun and gain simulated feedback such as recoil. As the project leader, I 
+                    am responsible for developing VR version, developing server communication function, drafting proposal and reports, organizing team meeting, 
+                    gatherinig learning materials, allocating resources, etc. And of course, I also take part in all other activities in the project. Here are some 
+                    screenshots of the application. 
+                </p>
+                <p>
+                    The first pic shows the VR version of the app. The second pic shows the MR version of the app. The third pic is an image showing the structure of the model gun. 
+                    The fourth pic shows me using the MR system.
+                    <figure>
+                        <img src="images/vr.jpg" alt="VR version of the application" class="group"/>
+                        <img src="images/ar.jpg" alt="MR version of the application" class="group"/>
+                        <img src="images/gun.png" alt="An image of the gun model" class="group"/>
+                        <img src="images/use.jpg" alt="An image of using the gun model" class="group"/>
+                    </figure>
+                </p>
+                <p>
+                    The team also gets to the semi-final in China Virtual Reality Industry Innovation Competition. The competition is held by China Virtual Reality Industry Association and
+                     is open to companies and college labs. It examines the competitors based on three aspects of their product: business, technology, and innovation. 
+                    Luckily, my team is the only team that comes from a university lab, while all other teams are companies big and small from all over China. 
+                    One of the largest extended reality company: Ximmerse is among the competitors. Here is some photos taken during the semi-final.
+                    <figure>
+                        <img src="images/comp1.jpg" alt="A picture of me and my teammates at the semi-final" class="group"/>
+                        <img src="images/comp2.jpg" alt="A picture of me showing the gun model to the judges" class="group"/>
+                    </figure>
+                </p>
+                <h4>👉 Lost in Galaxy</h4>
+                <p>
+                    "Lost in Galaxy" is a VR first-person shooting game run on Windows platform. The project is initiated by an SJTU course: VR/AR Design and Development (CS085) 
+                    during Sep. 2021 and Dec. 2021. The game is developed using Unity, C#, and Microsoft Mixed Reality Tool Kit. As the main developer of the project, 
+                    I am responsible for all the script coding, including the bullet effect, avatar movement, interactions, prefab spawn, sound effect, etc. 
+                    The plot of the game is quite simple: the main character is trying to find her missing friend, who has been off the radar for several months. After arriving at an abandoned 
+                    space station, the main character restores the power and found a creepy alien spying on her. The main character killed the alien but only to find that it was actually her 
+                    missing friend.
+                    Here is <a href="https://drive.google.com/file/d/1EDSSTcK8D2gxwrYoucuPuyTnLHxT8nJj/view?usp=sharing">a demo video </a> of the game.
+                    <img src="images/space.jpg" alt="A screenshot of the VR game"/>
+                </p>
+                <p>
+                    With the game, my team won the third prize of SJTU Industrial Scenario Digitizing Competition, which is a game design and development competition on campus.
+                </p>
+            </section>
+            <section>
+                <h3>⭐ Web Developing</h3>
+                <a href="https://github.com/RedNerka/portfolio-content" id="header_link">👉 Introducing a Game</a>
+                <p>
+                    This project is an independent project initiated by a UMSI course: Design of Complex Websites (SI539). The time used on this project is around 3 months from 
+                    Oct. 2022 to Dec. 2022. In the project, I made a four-page website for a strategy game: This War of Mine. Here is <a href="https://docs.google.com/document/d/1UXa4HgWIAJLj-99WhmBrUMDk9laJ5uLzfwScJ1avALA/edit?usp=sharing">a worksheet</a> 
+                    I draft for the project. And here is a <a href="https://rednerka.github.io/portfolio-content/index.html">link to the deployed page</a>.
+                </p>
             </section>
         </main>
 
-        <aside id="left_grid">
+        <aside>
             <form
               action="https://formspree.io/f/xwkjejze"
               method="POST"
             >
                 <label>
-                    Your email:
-                    <input type="email" name="email">
-                </label>
-                <label>
-                    Your message:
+                    Leave your message:
                     <textarea name="message"></textarea>
                 </label>
+                <label>
+                    Your email (Optional):
+                    <input type="email" name="email">
+                </label>
                 <!-- your other form fields go here -->
-                <button type="submit">Send</button>
+                <button type="submit" id="send_button">Send</button>
             </form>
         </aside>
 
         <footer>
-            <p>Shiyu Wu</p>
+            <p>Shiyu Wu &nbsp;&nbsp;&nbsp; Work email: wushiyu@umich.edu</p>
         </footer>
         <script src="js/script.js"></script>
     </body>
