@@ -72,21 +72,43 @@
                     this internship opportunity at TSC, I believe the sense of trust will help me a lot in my future career life.
                 </p>
                 <p>
-                    Automated the process of scrapping JavaScript-generated data from web with BeautifulSoup and PyInstaller so that personnel without technical backgrounds 
-                    can save an hour on data extraction every 100 data records.
+                    Every time a new version of the company product is released, the product information on the partner eCommerce store website is supposed to be updated 
+                    accordingly. However, the company partners will not always have instant reactions. To find out which listed products need to be updated or removed, I reached out 
+                    to the partners to make a request of their product data. With that, I can make comparisons and get the result. However, some of them could not provide such data out of 
+                    some reasons. In that case, I used Python scripts and PyInstaller to build a simple executable file which is capable of automatically scrape the JavaScript-generated 
+                    data from the partner eCommerce store website. Moreover, since the script is packed into an executable file, personnel without technical backgrounds can still run the 
+                    script without configuring the computer environment. With its easy-to-use and powerful features, the tool enables my collegue to complete the data gathering process 
+                    with ease. As an estimation, the program can save an hour on data extraction every 100 data records, comparing to manual data gathering.
+                </p>
+                <p> 
+                    During my summer internship, I was also responsible for generating a quarterly workload analysis report for the entire sales department. The sources of data include: SalesForce, 
+                    PureCloud, ZenDesk, and PriceQuote. Though a template of some previous quarterly workload analysis reports are provided, I was able to use Pandas, Altair, Microsoft 
+                    Excel, and Microsoft Power BI to generate different kinds of visualizations. In general, they include pivot tables, bar plots, box and whisker plots, and line plots grouped by different sales regions, 
+                    time, and individuals. The entire report is completed independently within three days and delivered in a form of powerpoint slides.
                 </p>
                 <p>
-                    Generated sales reports and data visualizations for TechSmith Snagit with auto-refresh based on live data using Microsoft Power BI and Microsoft 
-                    Azure Data Factory so that the time for frequent manual refreshes is saved.
+                    As the company is transferring the sales mode to SaaS, I was responsible for separating the legacy site license agreements with the non-legacy ones. 
+                    With this, the core management team can evaluate the current progress of transition and make plans on how to change the service to the renewing clients. 
+                    Basically, I used Microsoft SQL Server Management Studio and SQL queries to get the desired data and make sure the data to be imported to Microsoft Excel is scalable. 
+                    After that, I set up some pivot tables and slicers as the final data visualizations. For the sake of convenience, I stored the workflow into the data pipeline 
+                    using Microsoft Azure Data Factory. In that way, the data can be regularly updated and the report can be easily generated in the future.
                 </p>
                 <p>
-                    Conducted quarterly workload analysis for the sales department using Python, Power Queries, Matplotlib, and Power BI. Sales numbers and interactions 
-                    with customers by groups and time are gathered and well-illustrated independently.
+                    Aside from data analysis works, I was also responsible for some database management works. One of the projects I did during the internship is migrating 
+                    a huge number of files from a remote drive to SharePoint Online Document Libraries. In addition, the metadata such as create date, author, etc. need to be 
+                    retained. There are a lot of phases in the project. At first, since the time needed to access a specific file in the remote drive is fairly long, I wrote a 
+                    shell script to traverse through all the files in the remote drive and generate a local indexer which contains all the information of the files. This indexer is 
+                    similar to a dictionary in Python or an unordered_map in C++. With the indexer, I can locate a file instantly given the name. This is useful if further filters will be 
+                    applied based on the file content or its metadata. After that, I was trying to use Windows Robocopy to copy the files to OneDrive with multiple threads. 
+                    This approach is fast, but the copied files will only keep the metadata in the local file explorer. On OneDrive, the metadata are not kept. Finally, I decided to 
+                    utilize SharePoint Migration Tool provided by Microsoft. This tool can effectively keep the metadata of the files and save local drive storage space, at a cost of speed. 
+                    The entire project was completed individually from initiation to deployment. Though there are some ideas that were not applied in the final approach, the project itself is 
+                    successful.
                 </p>
                 <h4>👉 Business Status of American Airlines During Pandemic</h4>
                 <p>
                     This project is an independent project initiated by a UMSI course: Data Manipulation and Analysis (SI618). The time period of the project is around 1 month 
-                    from Nov. 2022 to Dec. 2022. In the project, I used three datasets downloaded from <a href="https://www.kaggle.com/datasets">Kaggle</a> fro analysis: COVID-19 
+                    from Nov. 2022 to Dec. 2022. In the project, I used three datasets downloaded from <a href="https://www.kaggle.com/datasets">Kaggle</a> for analysis: COVID-19 
                     spread data, American Airlines (AA) stock price and deal volume data from 2005 to 2022, US domestic flight delay data. The goal of this project is to answer 
                     three questions: Is there any seasonal effect in any of the datasets? Is there any significant impact from the pandemic on the business status of AA? A flight 
                     delay event can be due to joint causes, what are some patterns of the delay cause when a delay happens?
